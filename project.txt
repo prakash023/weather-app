@@ -1,0 +1,52 @@
+Project
+--------
+what?
+A weather dashboard with current weather and 7 days forecast
+with different attributes such as Precipitation, UV index, wind-speed, etc.
+Search functionality to automatically populate data
+-- add more --
+
+Tools
+-----
+open-meteo API to fetch weather and forecast data
+Frontend based in react JS.
+Bootstrap React Components
+recharts library to plot chart
+
+Features
+-----------
+Search box to search by location
+Current weather dashboard with various info.
+Forecast of upcoming 7 days.
+Chart with useful statistics
+
+Procedure
+------------
+Fetch weather and forecast data from open meteo
+Design to a frontend 
+Use data fetched from API to populate onto the dashboard
+
+Compatibility with own data / raspberry pi generated
+--------------------------------
+The frontend elements can be edited / tweaked to show
+arbitrary data from arbitrary sources as long as they can be
+fetched using HTTP calls. The data must be made available via and
+API endpoint.
+If Rasberry Pi is used, we need a database and an API to serve the 
+weather data which then can be displayed on the dashboard.
+
+why no pi? challenges faced
+--------------------
+While we started working with raspberry pi, the sensors we got turned out
+faulty and did not provide reliable measurements despite various attempts.
+This resulted in wastage of substantial amount of time, thus we  used the pre-
+existing open-meteo API as a proof of concept. 
+We found out that useful weather APIs are either unreliable, or paywalled. After
+several attempts at finding the right API, open-meteo worked while not providing
+the complete data we wanted.
+
+Future works, improvements
+--------------------------
+Improvements to frontend
+using Pi to get real-world real-time data
+Using more robust API
